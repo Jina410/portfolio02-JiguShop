@@ -1,0 +1,45 @@
+:root{
+  /* COLOR */
+  /* Primary */
+  --main-primary-dark : #183029;
+  --brand-green : #268446;
+  /* Secondary */
+  --sub1-dark-green : #497340;
+  --sub2-green : #43A047;
+  --sub3-light-green : #4CAF50;
+  --sub4-pale-green : #CBE3CC;
+  /* Accent / Point */
+  --point1-yellow : #FBF591;
+  --point2-orange : #FFB668;
+  --point3-peach : #FFDAA8;
+  /* Neutrals */
+  --white1-dark : #F5F5F5;
+  --white2 : #FBFBFB;
+  --white3-light : #FEFEFE;
+  --black1-dark : #212121;
+  --black2 : #3B4859;
+  --black3-medium : #7F8A98;
+  --black4-light : #C6CBD3;
+  --bg-point : #FBFAF6;
+
+  /* SPACING */
+  --spacing-xs: 0.25rem;  /* 4px */
+  --spacing-sm: 0.5rem;   /* 8px */
+  --spacing-md: 1rem;     /* 16px */
+  --spacing-lg: 2rem;     /* 32px */
+  --spacing-xl: 3rem;     /* 48px */
+
+  --container-padding: 2rem; /* 32px */
+
+/* font-size */
+  --font-xs: 0.75rem;   /* 12px */
+  --font-sm: 0.875rem;  /* 14px */
+  --font-md: 1rem;      /* 16px */
+  --font-lg: 1.25rem;   /* 20px */
+  --font-xl: 1.5rem;    /* 24px */
+  /* font-weight */
+  --font-light: 300;
+  --font-normal: 400;
+  --font-medium: 500;
+  --font-bold: 700;
+}

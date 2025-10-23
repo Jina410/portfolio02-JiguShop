@@ -1,0 +1,910 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link href="https://unpkg.com/ress/dist/ress.min.css" rel="stylesheet">
+  <link href="css/variable.css" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script> <!--Jguery-->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" /> <!--SwiperCSS-->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script><!--SwiperJS-->
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script> <!--gsap-->
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script> <!--gsap-->
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollToPlugin.min.js"></script> <!--gsap-->
+
+  <link href="css/common.css" rel="stylesheet"> <!--공통CSS-->
+  <link href="css/main.css" rel="stylesheet">
+  <link href="css/MediaQuery.css" rel="stylesheet">
+  <script src="js/common.js"></script> <!--공통JavaScript-->
+  <script src="js/main.js"></script>
+
+</head>
+
+<body>
+    <!-- 고정 top버튼 -->
+  <div class="top">
+    <a href="#"><img src="img/icon/topBtn1.png" alt="top버튼"></a>
+  </div>
+
+  <header class="effect">
+    <section id="header-wrapper">
+      <div class="container">
+        <div class="header-inner">
+          <nav class="main-nav">
+            <ul class="main-menu">
+              <li class="none"><a href="#">ABOUT</a></li>
+              <li class="none"><a href="#">SHOP</a>
+                <ul class="sub">
+                  <li><a href="#">덴탈</a></li>
+                  <li><a href="#">욕실</a></li>
+                  <li><a href="#">주방</a></li>
+                  <li><a href="#">식품</a></li>
+                  <li><a href="#">리빙&키링</a></li>
+                  <li><a href="#">반려동물</a></li>
+                  <li><a href="#">세트</a></li>
+                </ul>
+              </li>
+              <li><a href="#">B2B MALL</a>
+                <ul class="sub">
+                  <li><a href="#">대량 주문</a></li>
+                  <li><a href="#">도매 B2B몰</a></li>
+                </ul>
+              </li>
+              <li><a href="#">COLLECT</a>
+                <ul class="sub">
+                  <li><a href="#">수거서비스</a></li>
+                  <li><a href="#">수거 신청</a></li>
+                </ul>
+              </li>
+              <li><a href="#">COMMUNITY</a>
+                <ul class="sub">
+                  <li><a href="#">공지사항</a></li>
+                  <li><a href="#">진심 후기</a></li>
+                  <li><a href="#">지구샵레터</a></li>
+                  <li><a href="#">덜-쓸궁리</a></li>
+                </ul>
+              </li>
+            </ul>
+            <div class="menu-bg"></div>
+          </nav>
+          <a href="#" class="logo">
+            <img src="img/icon/logo.png" alt="logo">
+          </a>
+
+          <div class="user-actions">
+            <nav class="sub-nav">
+              <ul class="sub-menu">
+                <li><a href="#">로그인</a></li>
+                <li><a href="#">회원가입</a></li>
+                <li><a href="#">마이페이지</a></li>
+                <li><a href="#">장바구니</a></li>
+              </ul>
+            </nav>
+
+            <form class="search">
+              <input type="search" placeholder="#멋스럽고 #간편하게! #고체치약">
+              <button type="submit"><img src="img/icon/search.png" alt="검색버튼"></button>
+            </form>
+
+            <ul class="mobile-header-menu">
+              <li><a href="#"><img src="img/icon/shopping-cart.png" alt="장바구니이동하기"></a></li>
+              <li><a href="#" class="mobile-search"><img src="img/icon/search2.png" alt="검색하기"></a></li>
+              <li><a href="#" class="mobile-menu"><img src="img/icon/menu.png" alt="메인메뉴 켜기"></a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="search-detailed">
+      <div class="container">
+        <div class="inner">
+          <input type="search" placeholder="무엇을 찾아드릴까요?">
+          <hr>
+          <ul class="search-keyword-lgtm">
+            <li><a href="#">쿨앤프레시</a></li>
+            <li><a href="#">비누</a></li>
+            <li><a href="#">주방비누</a></li>
+            <li><a href="#">대나무 칫솔</a></li>
+            <li><a href="#">리바아브</a></li>
+            <li><a href="#">고체치약</a></li>
+          </ul>
+        </div>
+        <img src="img/icon/close.png" alt="서치 닫기버튼">
+      </div>
+    </section>
+
+    <section class="mobile-tap-menu-wrap">
+      <nav class="mobile-tap-nav">
+        <div class="top-box">
+          <img src="img/icon/Close2.png" alt="햄버거 메뉴 닫기 버튼">
+          <div class="helloUser">
+            <p>로그인이 필요합니다.</p>
+            <a href="#">로그인</a>
+          </div>
+          <ul class="login-quicksite-menu logout">
+            <li><a href="#"><img src="img/icon/loginSite1.png" alt="구매내역 사이트바로가기"></a>
+              <p>구매내역</p>
+            </li>
+            <li><a href="#"><img src="img/icon/loginSite2.png" alt="쿠폰함 사이트바로가기"></a>
+              <p>쿠폰함</p>
+            </li>
+            <li><a href="#"><img src="img/icon/loginSite3.png" alt="찜목록 사이트바로가기"></a>
+              <p>낌목록</p>
+            </li>
+            <li><a href="#"><img src="img/icon/loginSite4.png" alt="수거결과 사이트바로가기"></a>
+              <p>수거결과</p>
+            </li>
+          </ul>
+        </div>
+        <hr>
+        <ul class="mobile-tap-menu">
+          <li><a href="#">ABOUT</a></li>
+          <li><a href="#">SHOP<img src="img/icon/mobile-menu-btn.png"></img></a>
+            <ul class="sub">
+              <li><a href="#">덴탈</a></li>
+              <li><a href="#">욕실</a></li>
+              <li><a href="#">주방</a></li>
+              <li><a href="#">식품</a></li>
+              <li><a href="#">리빙&키링</a></li>
+              <li><a href="#">반려동물</a></li>
+              <li><a href="#">세트</a></li>
+            </ul>
+          </li>
+          <li><a href="#">B2B MALL<img src="img/icon/mobile-menu-btn.png"></img></a>
+            <ul class="sub">
+              <li><a href="#">대량 주문</a></li>
+              <li><a href="#">도매 B2B몰</a></li>
+            </ul>
+          </li>
+          <li><a href="#">COLLECT<img src="img/icon/mobile-menu-btn.png"></img></a>
+            <ul class="sub">
+              <li><a href="#">수거서비스</a></li>
+              <li><a href="#">수거 신청</a></li>
+            </ul>
+          </li>
+          <li><a href="#">COMMUNITY<img src="img/icon/mobile-menu-btn.png"></img></a>
+            <ul class="sub">
+              <li><a href="#">공지사항</a></li>
+              <li><a href="#">진심 후기</a></li>
+              <li><a href="#">지구샵레터</a></li>
+              <li><a href="#">덜-쓸궁리</a></li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+    </section>
+  </header>
+
+  <main>
+    <div class="transparency"></div>
+    <section id="banner">
+      <div class="swiper mySwiper1">
+        <div class="swiper-wrapper">
+          <a href="#" class="swiper-slide">
+            <picture>
+              <source srcset="img/main/banner_img01_mobile.png" media="(max-width: 1000px)">
+              <img src="img/main/banner_img01_pc.png">
+            </picture>
+          </a>
+          <a href="#" class="swiper-slide">
+            <picture>
+              <source srcset="img/main/banner_img02_mobile.png" media="(max-width: 1000px)">
+              <img src="img/main/banner_img02_pc.png">
+            </picture>
+          </a>
+          <a href="#" class="swiper-slide">
+            <picture>
+              <source srcset="img/main/banner_img03_mobile.png" media="(max-width: 1000px)">
+              <img src="img/main/banner_img03_pc.png">
+            </picture>
+          </a>
+        </div>
+        <div class="swiper-pagination"></div>
+        <div class="fraction">?/?</div>
+      </div>
+      <div class="scroll-indicator">
+        <p>scroll down</p>
+      </div>
+    </section>
+
+    <section id="recycle">
+      <div class="recycle-process">
+        <div class="container">
+          <div class="recycle-text">
+            <h2>KEEP OUR PLANET GREEN!</h2>
+            <p>지구가 주는 <mark>순환의 지혜</mark>로 <br>
+              <mark>버려지는 것</mark>이 다시 <i>쓰임을 얻습니다.</i>
+            </p>
+          </div>
+
+          <figure class="recycle-steps">
+            <!--1단계-->
+            <div class="recycle-step">
+              <div class="recycle-step__images">
+                <img src="img/main/recycling1-1.png" alt="수거하는 이미지">
+              </div>
+              <figcaption>수거</figcaption>
+            </div>
+            <div class="recycle-step__arrow">
+              <img src="img/main/recycling-arrow.png" alt="과정라인">
+            </div>
+
+            <!--2단계-->
+            <div class="recycle-step">
+              <div class="recycle-step__images">
+                <img src="img/main/recycling2-1.png" alt="세척건조후분류이미지 칫솔통">
+                <img src="img/main/recycling2-2.png" alt="세척건조후분류이미지 뚜껑">
+                <img src="img/main/recycling2-3.png" alt="세척건조후분류이미지 칫솔머리 커버">
+                <img src="img/main/recycling2-4.png" alt="세척건조후분류이미지 칫솔">
+              </div>
+              <figcaption>세촉,건조 후 분류</figcaption>
+            </div>
+            <div class="recycle-step__arrow">
+              <img src="img/main/recycling-arrow.png" alt="과정라인">
+            </div>
+
+            <!--3단계-->
+            <div class="recycle-step">
+              <div class="recycle-step__images">
+                <img src="img/main/recycling3-1.png" alt="분류이미지1">
+                <img src="img/main/recycling3-2.png" alt="분류이미지2">
+                <img src="img/main/recycling3-3.png" alt="분류이미지3">
+              </div>
+              <figcaption>원료화</figcaption>
+            </div>
+            <div class="recycle-step__arrow">
+              <img src="img/main/recycling-arrow.png" alt="마지막 과정라인">
+            </div>
+
+            <!--4단계-->
+            <div class="recycle-step">
+              <div class="recycle-step__images">
+                <img src="img/main/recycling4-1.png" alt="재생산이미지 칫솔통">
+                <img src="img/main/recycling4-2.png" alt="재생산이미지 뚜껑">
+                <img src="img/main/recycling4-3.png" alt="재생산이미지 칫솔">
+                <img src="img/main/recycling4-4.png" alt="재생산이미지 칫솔머리 커버">
+              </div>
+              <figcaption>원료화된 플라스틱<br>5% 비율로 제품 생산</figcaption>
+            </div>
+          </figure>
+        </div>
+      </div>
+
+      <div class="recycle-bg">
+        <p>지속가능한 소비.<br>
+          지구를 지키는 작지만 확실한 실천, 지구샵에서 시작합니다.
+        </p>
+      </div>
+      <div class="recycle-btn">
+        <a href="#">
+          <img src="img/icon/button-arrow.png" alt="버튼 화살표">
+          <span>JIGU를 위한 여정</span>
+          <div class="recycle-button-bg"></div>
+        </a>
+      </div>
+    </section>
+
+    <section id="product-menu">
+      <div class="container">
+        <div class="product-menu_wrap">
+          <ul class="product-menu">
+            <li>
+              <div class="inner">
+                <a href="#">
+                  <h1>ALL</h1>
+                </a>
+                <p>전 제품</p>
+              </div>
+            </li>
+            <li>
+              <div class="inner">
+                <a href="#"><img src="img/main/ProductMenu1.jpeg" alt="덴탈 대표이미지"></a>
+                <p>덴탈</p>
+              </div>
+            </li>
+            <li>
+              <div class="inner">
+                <a href="#"><img src="img/main/ProductMenu2.jpeg" alt="욕실 대표이미지"></a>
+                <p>욕실</p>
+              </div>
+            </li>
+            <li>
+              <div class="inner">
+                <a href="#"><img src="img/main/ProductMenu3.jpeg" alt="주방 대표이미지"></a>
+                <p>주방</p>
+              </div>
+            </li>
+            <li>
+              <div class="inner">
+                <a href="#"><img src="img/main/ProductMenu4.jpg" alt="식품 대표이미지"></a>
+                <p>식품</p>
+              </div>
+            </li>
+            <li>
+              <div class="inner">
+                <a href="#"><img src="img/main/ProductMenu5.jpeg" alt="리빙키링 대표이미지"></a>
+                <p>리빙&키링</p>
+              </div>
+            </li>
+            <li>
+              <div class="inner">
+                <a href="#"><img src="img/main/ProductMenu6.jpeg" alt="반려동물 대표이미지"></a>
+                <p>반려동물</p>
+              </div>
+            </li>
+            <li>
+              <div class="inner">
+                <a href="#"><img src="img/main/ProductMenu7.jpeg" alt="선물세트 대표이미지"></a>
+                <p>선물세트</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="section-bg"></div>
+    </section>
+
+    <section id="best-products">
+      <div class="container">
+        <div class="best-products-wrap">
+          <div class="top-wrap">
+            <div class="title">
+              <h1>BEST</h1>
+              <p>지금 제일 잘나가요!</p>
+            </div>
+            <div class="btn-more-products">
+              <a href="#">
+                <span>상품 더보기</span>
+                <img src="img/icon/button-arrow2.png" alt="상품 더보기 화살표 버튼"></img>
+              </a>
+            </div>
+          </div>
+
+          <div class="swiper mySwiper2">
+            <div class="swiper-wrapper">
+              <!--* item01-->
+              <div class="swiper-slide">
+                <article class="product-item">
+                  <a href="#" class="img-wrap">
+                    <ul class="product-actions">
+                      <li class="btn-hart"><img src="img/icon/hart.png" alt="찜하기"></li>
+                      <li class="btn-cart"><img src="img/icon/cart.png" alt="장바구니 담기"></li>
+                    </ul>
+                    <img src="img/main/item1.jpeg" alt="고체치약 150정입 상품 이미지">
+                  </a>
+
+                  <div class="product-info">
+                    <div class="info-inner">
+                      <h2>고체치약 150정입</h2>
+                      <ul class="keyword">
+                        <li>#제로웨이스트</li>
+                        <li>#치약</li>
+                        <li>#종이분리배출</li>
+                      </ul>
+                    </div>
+                    <ul class="product-tags">
+                      <li class="active">BEST</li>
+                      <li class="active">HOT</li>
+                      <li>SALE</li>
+                    </ul>
+                  </div>
+
+                  <div class="product-price">
+                    <p class="original-price">10,000원</p>
+                    <div class="final-price">
+                      <p class="discount-rate">100<span>%</span></p>
+                      <h3>13,400원</h3>
+                    </div>
+                  </div>
+                </article>
+              </div>
+
+              <!--* item02-->
+              <div class="swiper-slide">
+                <article class="product-item">
+                  <a href="#" class="img-wrap">
+                    <ul class="product-actions">
+                      <li class="btn-hart"><img src="img/icon/hart.png" alt="찜하기"></li>
+                      <li class="btn-cart"><img src="img/icon/cart.png" alt="장바구니 담기"></li>
+                    </ul>
+                    <img src="img/main/item2.jpeg" alt="리바이브 칫솔 상품 이미지">
+                  </a>
+
+                  <div class="product-info">
+                    <div class="info-inner">
+                      <h2>리바이브 칫솔</h2>
+                      <ul class="keyword">
+                        <li>#생분해성플라스틱</li>
+                        <li>#칫솔</li>
+                        <li>#4가지색상</li>
+                      </ul>
+                    </div>
+                    <ul class="product-tags">
+                      <li class="active">BEST</li>
+                      <li>HOT</li>
+                      <li>SALE</li>
+                    </ul>
+                  </div>
+
+                  <div class="product-price">
+                    <p class="original-price">10,000원</p>
+                    <div class="final-price">
+                      <p class="discount-rate">100<span>%</span></p>
+                      <h3>3,200원</h3>
+                    </div>
+                  </div>
+                </article>
+              </div>
+
+              <!--* item03-->
+              <div class="swiper-slide">
+                <article class="product-item">
+                  <a href="#" class="img-wrap">
+                    <ul class="product-actions">
+                      <li class="btn-hart"><img src="img/icon/hart.png" alt="찜하기"></li>
+                      <li class="btn-cart"><img src="img/icon/cart.png" alt="장바구니 담기"></li>
+                    </ul>
+                    <img src="img/main/item3.jpeg" alt="대나무칫솔 12개입 상품 이미지">
+                  </a>
+
+                  <div class="product-info">
+                    <div class="info-inner">
+                      <h2>대나무 칫솔 (12개입)</h2>
+                      <ul class="keyword">
+                        <li>#칫솔</li>
+                        <li>#자연에서_자연으로</li>
+                        <li>#대나무</li>
+                      </ul>
+                    </div>
+                    <ul class="product-tags">
+                      <li>BEST</li>
+                      <li>HOT</li>
+                      <li class="active">SALE</li>
+                    </ul>
+                  </div>
+
+                  <div class="product-price">
+                    <p class="original-price active">24,000원</p>
+                    <div class="final-price">
+                      <p class="discount-rate active">20<span>%</span></p>
+                      <h3>19,200원</h3>
+                    </div>
+                  </div>
+
+                </article>
+              </div>
+
+              <!--* item04-->
+              <div class="swiper-slide">
+                <article class="product-item">
+                  <a href="#" class="img-wrap">
+                    <ul class="product-actions">
+                      <li class="btn-hart"><img src="img/icon/hart.png" alt="찜하기"></li>
+                      <li class="btn-cart"><img src="img/icon/cart.png" alt="장바구니 담기"></li>
+                    </ul>
+                    <img src="img/main/item4.jpeg" alt="스트롱고체치약(쿨민트향) 450정입 상품 이미지">
+                  </a>
+
+                  <div class="product-info">
+                    <div class="info-inner">
+                      <h2>스트롱고체치약(쿨민트향) 450정입</h2>
+                      <ul class="keyword">
+                        <li>#치약</li>
+                        <li>#고체치약</li>
+                        <li>#쿨민트향</li>
+                      </ul>
+                    </div>
+                    <ul class="product-tags">
+                      <li class="active">BEST</li>
+                      <li>HOT</li>
+                      <li class="active">SALE</li>
+                    </ul>
+                  </div>
+
+                  <div class="product-price">
+                    <p class="original-price active">40,200원</p>
+                    <div class="final-price">
+                      <p class="discount-rate active">10<span>%</span></p>
+                      <h3>35,900원</h3>
+                    </div>
+                  </div>
+
+                </article>
+              </div>
+              <!--* item05-->
+              <div class="swiper-slide">
+                <article class="product-item">
+                  <a href="#" class="img-wrap">
+                    <ul class="product-actions">
+                      <li class="btn-hart"><img src="img/icon/hart.png" alt="찜하기"></li>
+                      <li class="btn-cart"><img src="img/icon/cart.png" alt="장바구니 담기"></li>
+                    </ul>
+                    <img src="img/main/item5.jpeg" alt="스트롱고체치약(쿨민트향) 150정입 상품 이미지">
+                  </a>
+
+                  <div class="product-info">
+                    <div class="info-inner">
+                      <h2>스트롱고체치약(쿨민트향) 150정입</h2>
+                      <ul class="keyword">
+                        <li>#치약</li>
+                        <li>#고체치약</li>
+                        <li>#쿨민트향</li>
+                      </ul>
+                    </div>
+                    <ul class="product-tags">
+                      <li class="active">BEST</li>
+                      <li>HOT</li>
+                      <li>SALE</li>
+                    </ul>
+                  </div>
+
+                  <div class="product-price">
+                    <p class="original-price">24,000원</p>
+                    <div class="final-price">
+                      <p class="discount-rate">20<span>%</span></p>
+                      <h3>13,400원</h3>
+                    </div>
+                  </div>
+
+                </article>
+              </div>
+              <!--* item06-->
+              <div class="swiper-slide">
+                <article class="product-item">
+                  <a href="#" class="img-wrap">
+                    <ul class="product-actions">
+                      <li class="btn-hart"><img src="img/icon/hart.png" alt="찜하기"></li>
+                      <li class="btn-cart"><img src="img/icon/cart.png" alt="장바구니 담기"></li>
+                    </ul>
+                    <img src="img/main/item6.jpeg" alt="대나무칫솔 12개입 상품 이미지">
+                  </a>
+
+                  <div class="product-info">
+                    <div class="info-inner">
+                      <h2>쿨앤프레시 치약</h2>
+                      <ul class="keyword">
+                        <li>#치약</li>
+                        <li>#재활용 플라스틱</li>
+                        <li>#상쾌함</li>
+                      </ul>
+                    </div>
+                    <ul class="product-tags">
+                      <li class="active">BEST</li>
+                      <li>HOT</li>
+                      <li>SALE</li>
+                    </ul>
+                  </div>
+
+                  <div class="product-price">
+                    <p class="original-price">24,000원</p>
+                    <div class="final-price">
+                      <p class="discount-rate">20<span>%</span></p>
+                      <h3>6,500원</h3>
+                    </div>
+                  </div>
+
+                </article>
+              </div>
+            </div>
+
+            <div class="swiper-pagination"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="real-review">
+      <div class="container">
+        <div class="review-section-wrap">
+          <div class="title">
+            <h1>REAL REVIEW</h1>
+            <p>고객님들의 사용후기를 확인해보세요!</p>
+          </div>
+
+          <div class="review-wrap">
+            <div class="review-item">
+              <div class="review-img">
+                <img src="img/main/review-img1.jpg" alt="주방비누 리뷰 사진">
+              </div>
+              <div class="review-content">
+                <h3>주방비누</h3>
+                <p>사용하기 좋네요 맨손 설거지해도 손에 세제가 남아있지 않아서 좋아요.<br><br>사용하다보면 요령도 생기고 익숙해지겠죠? ㅎㅎ</p>
+                <figure><img src="img/icon/star.png"><img src="img/icon/star.png"><img src="img/icon/star.png"><img
+                    src="img/icon/star.png"><img src="img/icon/star.png"></figure>
+              </div>
+            </div>
+            <div class="review-item">
+              <div class="review-img">
+                <img src="img/main/review-img2.jpg" alt="런치박스 리뷰 사진">
+              </div>
+              <div class="review-content">
+                <h3>휴대용 접이식 실리콘 런치 박스</h3>
+                <p>가격이 좀 부담되긴 했지만 받아보니 만족합니다. 색상이 다 이뻐요.</p>
+                <figure><img src="img/icon/star.png"><img src="img/icon/star.png"><img src="img/icon/star.png"><img
+                    src="img/icon/star.png"></figure>
+              </div>
+            </div>
+            <div class="review-item">
+              <div class="review-img">
+                <img src="img/main/review-img3.jpg" alt="대나무칫솔 리뷰 사진">
+              </div>
+              <div class="review-content">
+                <h3>대나무칫솔(12개입)</h3>
+                <p>재구매입니다.<br><br>
+                  환경보호도 하고 내 치아 건강도 지키고, 양치 후 수건으로 칫솔 대의 물기 닦아줘야 합니다.</p>
+                <figure><img src="img/icon/star.png"><img src="img/icon/star.png"><img src="img/icon/star.png"><img
+                    src="img/icon/star.png"><img src="img/icon/star.png"></figure>
+              </div>
+            </div>
+          </div>
+          <div class="btn-more-rebiew">
+            <a href="#">
+              <span>더 많은 후기 확인하기</span>
+              <img src="img/icon/button-arrow2.png" alt="리뷰 더보기 화살표 버튼">
+            </a>
+          </div>
+        </div>
+    </section>
+
+    <section id="brand-story">
+      <div class="container">
+        <div class="brandstory-section-inner">
+          <div class="brandstory-info">
+            <div class="inner">
+              <h1>OUR STORY</h1>
+              <p>지구에도, 내 삶에도 보탬이 되는 제로웨이스트 라이프의 시작</p>
+              <div class="btn-more-brand">
+                <a href="#">
+                  <span>자세히 보기</span>
+                  <img src="img/icon/button-arrow3.png" alt="브랜드스토리 자세히보기 화살표 버튼">
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="brandstory-gallery">
+            <div class="brandstory-gallery-inner">
+              <div class="brandstory-item">
+                <h2>지구샵이 그리는 맑은 일상</h2>
+              </div>
+              <div class="brandstory-item">
+                <h2>지구 주민과 함께, MADE BY JIGU</h2>
+              </div>
+              <div class="brandstory-item">
+                <h2>오늘에서 내일로 흐르는 지구샵의 착한 약속</h2>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="community">
+      <div class="container-wrap">
+        <div class="container">
+          <div class="title">
+            <h1>CONTENT</h1>
+            <p>지구샵이 보내는 이야기</p>
+          </div>
+        </div>
+        <div class="container">
+          <a href="#" class="btn-more-content">
+            <span>더보기</span>
+            <img src="img/icon/more-horizontal.png" alt="더보기 버튼 아이콘">
+          </a>
+          <div id="mySwiper3-nextBtn" class="swiper-button-next"><img src="img/icon/content-slide-btn-next.png"></div>
+          <div id="mySwiper3-prenBtn" class="swiper-button-prev"><img src="img/icon/content-slide-btn-prev.png"></div>
+        </div>
+
+        <div class="swiper mySwiper3">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="content-item">
+                <div class="img-wrap">
+                  <img src="img/main/content-item1.png" alt="순환하는 지구텃밭 하반기 글">
+                </div>
+                <div class="text-wrap">
+                  <div class="text-wrap-inner">
+                    <img src="img/icon/quotes.png" alt="따음표">
+                    <p>&lt;순환하는 지구텃밭&gt;은 지구학교 장그 프로그램으로 4월부터 11월까지 월 2회 만납니다. 작년 그로서리 매장 앞 상자 텃밭에 이어 올해는 남태령 텃밭에서 다양한
+                      작물을
+                      키워봅니다. 올해 지구텃밭은 송하텃밭정원연구소가 함께 합니다.</p>
+                    <time>2023.12.05</time>
+                  </div>
+                </div>
+              </div>
+            </div>
+                      <div class="swiper-slide">
+              <div class="content-item">
+                <div class="img-wrap">
+                  <img src="img/main/content-item2.png" alt="다닝머쉬룸으로 수선 글">
+                </div>
+                <div class="text-wrap">
+                  <div class="text-wrap-inner">
+                    <img src="img/icon/quotes.png" alt="따음표">
+                    <p>7월 지구학교 주제는 #고치기입니다. 우리가 사용하던 물품이 고장 나거나 수선이 필요할 때, 고쳐서 사용하기보다는 버리고 새로운 제품을 사는 것이 더 편한 오늘입니다. 물건
+                      수선은 쓰레기를 줄이는 것은 물론 쉽게 구매하고 버리는 소비에 대한 생각도 바꿔줍니다.</p>
+                    <time>2023.08.03</time>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="content-item">
+                <div class="img-wrap">
+                  <img src="img/main/content-item3.png" alt="순환하는 지구텃밭 하반기 글">
+                </div>
+                <div class="text-wrap">
+                  <div class="text-wrap-inner">
+                    <img src="img/icon/quotes.png" alt="따음표">
+                    <p>지난 5월 13일, '강릉비치클린업'을 오션카인드와 함께하였습니다. 서울, 강릉, 부천 등 다양한 지역에서 모인 지구 주민분들과 바다 쓰레기 이야기를 시작했습니다. 오션카인드가 바닷속에서 직접 마주한 해양 쓰레기 문에즤 심각성과 원인을 시작으로 이야기를 나누었습니다. 또한 해변을 깨끗하게 지키는 일의 중요성도 직접 만든 교육 키트를 사용해 이해하기 쉽게 풀어주셨습니다.</p>
+                    <time>2023.07.28</time>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="content-item">
+                <div class="img-wrap">
+                  <img src="img/main/content-item1.png" alt="순환하는 지구텃밭 하반기 글">
+                </div>
+                <div class="text-wrap">
+                  <div class="text-wrap-inner">
+                    <img src="img/icon/quotes.png" alt="따음표">
+                    <p>&lt;순환하는 지구텃밭&gt;은 지구학교 장그 프로그램으로 4월부터 11월까지 월 2회 만납니다. 작년 그로서리 매장 앞 상자 텃밭에 이어 올해는 남태령 텃밭에서 다양한
+                      작물을
+                      키워봅니다. 올해 지구텃밭은 송하텃밭정원연구소가 함께 합니다.</p>
+                    <time>2023.12.05</time>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="content-item">
+                <div class="img-wrap">
+                  <img src="img/main/content-item2.png" alt="다닝머쉬룸으로 수선 글">
+                </div>
+                <div class="text-wrap">
+                  <div class="text-wrap-inner">
+                    <img src="img/icon/quotes.png" alt="따음표">
+                    <p>7월 지구학교 주제는 #고치기입니다. 우리가 사용하던 물품이 고장 나거나 수선이 필요할 때, 고쳐서 사용하기보다는 버리고 새로운 제품을 사는 것이 더 편한 오늘입니다. 물건
+                      수선은 쓰레기를 줄이는 것은 물론 쉽게 구매하고 버리는 소비에 대한 생각도 바꿔줍니다.</p>
+                    <time>2023.08.03</time>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="content-item">
+                <div class="img-wrap">
+                  <img src="img/main/content-item3.png" alt="순환하는 지구텃밭 하반기 글">
+                </div>
+                <div class="text-wrap">
+                  <div class="text-wrap-inner">
+                    <img src="img/icon/quotes.png" alt="따음표">
+                    <p>지난 5월 13일, '강릉비치클린업'을 오션카인드와 함께하였습니다. 서울, 강릉, 부천 등 다양한 지역에서 모인 지구 주민분들과 바다 쓰레기 이야기를 시작했습니다. 오션카인드가 바닷속에서 직접 마주한 해양 쓰레기 문에즤 심각성과 원인을 시작으로 이야기를 나누었습니다. 또한 해변을 깨끗하게 지키는 일의 중요성도 직접 만든 교육 키트를 사용해 이해하기 쉽게 풀어주셨습니다.</p>
+                    <time>2023.07.28</time>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <div class="notie-wrap">
+          <div class="container">
+            <div class="title">
+              <h1>NOTICE</h1>
+            </div>
+
+            <div class="notie-content-wrap">
+              <div class="notice-wrap">
+                <table>
+                  <tr>
+                    <td><strong>이벤트/혜택</strong></td>
+                    <td><a href="#"><p>지구샵 X 롯데리조트 | Journey with Zero waste</p></a></td>
+                    <td>2025.06.23</td>
+                  </tr>
+                  <tr>
+                    <td><strong>배송공지</strong></td>
+                    <td><a href="#"><p>무료배송 기준 변경 안내</p></a></td>
+                    <td>2024.03.21</td>
+                  </tr>
+                  <tr>
+                    <td><strong>배송공지</strong></td>
+                    <td><a href="#"><p>광복절 & 택배 없는 날 배송 및 고객센터 휴무 안내</p></a></td>
+                    <td>2024.08.06</td>
+                  </tr>
+                  <tr>
+                    <td><strong>배송공지</strong></td>
+                    <td><a href="#"><p>내부 워크샵으로 인한 배송 및 고객센터 휴무 안내</p></a></td>
+                    <td>2024.07.15</td>
+                  </tr>
+                  <tr>
+                    <td><strong>공지사항</strong></td>
+                    <td><a href="#"><p>지구샵 제품 가격 변경 안내</p></a></td>
+                    <td>2024.07.01</td>
+                  </tr>
+                </table>
+              </div>
+              <div class="userguide-wrap">
+                <div class="userguide-title">
+                  <img src="img/icon/Coll-Center.png" alt="헤드셋">
+                  <span>고객가이드</span>
+                </div>
+                <div class="text-box-wrap">
+                  <div class="text-box">
+                    <p>문의전화</p>
+                    <h3>02-812-2050</h3>
+                  </div>
+                  <div class="text-box">
+                    <p>영업일</p>
+                    <h3>수-일요일 11:00 - 21:00</h3>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="container">
+        <div class="top-footer">
+          <img src="img/icon/logo2.png" alt="로고이미지">
+          <ul>
+            <li><a href="#">도매 전용 B2B몰</a></li>
+            <li><a href="#">이용약관</a></li>
+            <li><a href="#">개인정보처리방침</a></li>
+          </ul>
+        </div>
+        <div class="bottom-footer">
+          <ul class="left-footer">
+            <li>
+              <p><b>대표자</b>김아리</p>
+            </li>
+            <li>
+              <p><b>주소</b>경기도 부천시 원미구 부천로198번길 36 101동 1502호</p>
+            </li>
+            <li>
+              <p><b>이메일</b>contact@jigushop.cp.kr</p>
+            </li>
+            <li>
+              <p><b>팩스</b>0303-3444-2050</p>
+            </li>
+          </ul>
+          <ul class="right-footer">
+            <li>
+              <p><b>회사명</b>주식회사 지구앤코</p>
+            </li>
+            <li>
+              <p><b>사업자등록번호</b>689-96-00791</p>
+            </li>
+            <li>
+              <p><b>통신판매업신고</b>제2025-부천원미-0233호</p>
+            </li>
+            <li>
+              <p><b>고객센터</b>02-812-2050</p>
+            </li>
+          </ul>
+        </div>
+        <div class="bottom-footer2">
+          <ul>
+            <li>경기도 부천시 원미구 부천로198번길 36 101동 1502호</li>
+            <li>대표자 김아리 | 사업자등록번호 689-96-00791 </li>
+            <li>E. contact@jigushop.cp.kr | FAX 0303-3444-2050 | T. 02-812-2050</li>
+          </ul>
+          <p>주식회사 지구앤코 | 통신판매업신고 제2025-부천원미-0233호</p>
+        </div>
+        <p><!--COPYRIGHT © KimJina. All rights reserved.--> <span>본 사이트는 포트폴리오용으로 만들어진 사이트입니다.</span></p>
+      </div>
+    </footer>
+  </main>
+</body>
+
+</html>
