@@ -97,6 +97,8 @@
   footer .container > p{text-align: center;}
 }
 @media screen and (max-width: 667px) {
+  #header-wrapper .logo img {width: 110px;}
+  #header-wrapper .mobile-header-menu{transform: scale(0.9);}
   #community .mySwiper3{transform: translateX(-47%);}
   #community .container-wrap .container:nth-child(2){transform: scale(0.9);}
   #community .container a.btn-more-content {left:50%; bottom:-500px;}

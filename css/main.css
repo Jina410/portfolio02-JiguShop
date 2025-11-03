@@ -112,6 +112,8 @@ header.effect #header-wrapper.active{
 
 #header-wrapper .logo img {
   width: 150px;
+
+  transition: .2s;
 }
 
 #header-wrapper .user-actions {
