@@ -19,7 +19,7 @@
   #brand-story .brandstory-section-inner .brandstory-info .inner{ width: 384px;min-width: 384px;}
   #community .mySwiper3{left: 0;transform: translateX(40px); width: 90%;}
   #community .mySwiper3 .swiper-slide.fade {opacity: 0;}
-  #community .text-wrap .text-wrap-inner p {-webkit-line-clamp: 6;}
+  #community .text-wrap .text-wrap-inner p {-webkit-line-clamp: 6;line-clamp: 6;}
 }
 @media screen and (max-width: 1050px) {
   #community .notie-wrap .notie-content-wrap .notice-wrap table tr td:nth-child(3){display: none;}
@@ -47,8 +47,9 @@
   #header-wrapper {height: max(90px, 10vh);}
   #banner {padding-top: max(90px, 10vh);}
   #banner .scroll-indicator {height: 15vh;}
-  #best-products .product-item .img-wrap .product-actions {bottom:13px;}
+  #best-products .product-item .img-wrap .product-actions {bottom:13px; }
   #best-products .product-item .img-wrap .product-actions>li img {transform: none;}
+  #best-products .best-products-wrap .top-wrap .btn-more-products a {width: 100%; margin-right: 10px;}
   #recycle {padding-top: 0;}
   #recycle .recycle-process .recycle-steps .recycle-step__images {width: 130px; height: 130px;}
   #recycle .recycle-process .recycle-steps .recycle-step__arrow {display: none;}
@@ -99,6 +100,7 @@
 @media screen and (max-width: 667px) {
   #header-wrapper .logo img {width: 110px;}
   #header-wrapper .mobile-header-menu{transform: scale(0.9);}
+  #real-review .review-section-wrap .review-wrap {gap:15px;transform: scale(0.7); transform-origin: top;}
   #community .mySwiper3{transform: translateX(-47%);}
   #community .container-wrap .container:nth-child(2){transform: scale(0.9);}
   #community .container a.btn-more-content {left:50%; bottom:-500px;}
@@ -112,17 +114,54 @@
   #community .notie-wrap {margin-top:50px;}
   #community .notie-wrap .notie-content-wrap .notice-wrap {padding: 40px 30px;}
   #community .notie-wrap .notie-content-wrap .notice-wrap table tr {gap: 0;flex-direction: column; align-items: flex-start;}
-  #community .notie-wrap .notie-content-wrap .notice-wrap table tr td:nth-child(1) {}
   #community .notie-wrap .notie-content-wrap .notice-wrap table tr td:nth-child(2) {width:100%; max-width: 350px;}
   #community .notie-wrap .notie-content-wrap .userguide-wrap .text-box-wrap{flex-direction: column;}
   footer .bottom-footer2{font-size: 14px;}
 }
 @media screen and (max-width: 500px) {
-  #recycle .recycle-process .recycle-steps .recycle-step__images {width: 100px; height: 100px;}
+  .container{padding:0 20px;}
+  #banner .swiper {border-radius: 20px;}
+  #recycle .recycle-process .recycle-text {transform: scale(0.8);}
+  #recycle .recycle-process .recycle-text p {font-size: 26px;}
+  #recycle .recycle-process .recycle-steps .recycle-step__images {width: 80px; height: 80px;}
+  #recycle .recycle-process .recycle-steps figcaption {font-size: 12px;}
   #best-products .product-item .img-wrap .product-actions {transform: scale(0.8); left:3px; bottom:5px;}
   #best-products .product-item .img-wrap:hover .product-actions {bottom:5px;}
-  #real-review .review-section-wrap .review-wrap {gap:15px;transform: scale(0.7); transform-origin: top;}
+  #best-products .mySwiper2 .swiper-pagination {height: 5px;}
   #brand-story .brandstory-section-inner .brandstory-info{border-radius: 100px;}
   #community .mySwiper3 {width: 100%; left:50%; transform: translateX(-55%);}
   #community .mySwiper3 .swiper-slide.fade {opacity: 1;}
+  #community .container .swiper-button-next {left:68%; bottom:-500px;}
+  #community .container .swiper-button-prev {left:20%; bottom:-500px;}
+}
+@media screen and (max-width: 450px) {
+  #real-review .review-section-wrap .review-wrap {flex-direction: column;gap:15px;transform: scale(0.8) translateX(20px); transform-origin: top;}
+  #community .notie-wrap .notie-content-wrap .notice-wrap table tr td:nth-child(2) {font-size:0.875rem;}
+}
+@media screen and (max-width: 400px) {
+  :root{
+    --font-xs: 0.75rem;
+    --font-sm: 0.75rem;
+    --font-md: 0.75rem;
+    --font-lg: 0.875rem;
+    --font-xl: 1rem;
+  }
+  .container{padding:0 10px;}
+  #header-wrapper .logo img {width: 80px;}
+  #header-wrapper .mobile-header-menu{transform: scale(0.7); transform-origin: right;}
+  #banner .scroll-indicator {transform: scale(0.9);}
+  #best-products .best-products-wrap .top-wrap .title {margin-bottom:20px;}
+  #best-products .best-products-wrap .top-wrap .btn-more-products a {height: auto; margin-bottom: 10px;}
+  #best-products .product-item .img-wrap .product-actions {transform: scale(0.7); transform-origin: left; left:8px; bottom:2px; gap:6px;}
+  #real-review .review-section-wrap .review-wrap {transform: scale(0.8) translateX(0);}
+  #real-review .review-section-wrap .review-wrap .review-item .review-content p {font-size: 1rem;}
+  #real-review .btn-more-rebiew {margin-top:0;}
+  #real-review .btn-more-rebiew a span {font-size:14px;}
+  #community .img-wrap {width: clamp(200px, 20vw, 292px);}
+  #community .container .swiper-button-next {left:70%; bottom:-500px;}
+  #community .container .swiper-button-prev {left:16%; bottom:-500px;}
+  footer{font-size:0.875rem}
+  .top-footer img{width: 90px; margin-bottom:20px;}
+  .bottom-footer2 ul{font-size:0.75rem;}
+  .bottom-footer2 p{font-size:0.75rem;}
 }
