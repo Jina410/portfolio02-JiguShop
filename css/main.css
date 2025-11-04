@@ -1418,7 +1418,9 @@ header.effect .search-detailed .container > img{
   position: relative;
   cursor: pointer;
 }
-
+#community .content-item img{
+  display: block;
+}
 #community .text-wrap .text-wrap-inner {
   width: 149px;
   float: right;
@@ -1437,6 +1439,7 @@ header.effect .search-detailed .container > img{
   display: -webkit-box;
   -webkit-box-orient: vertical;
   -webkit-line-clamp: 8;
+  line-clamp: 8;
   overflow: hidden;
 }
 

@@ -42,6 +42,8 @@
   #community .notie-wrap .notie-content-wrap .userguide-wrap .text-box-wrap{flex-direction: row; justify-content: space-between; padding: 0 70px;}
 }
 @media screen and (max-width: 767px) {
+  .top{right:5px; bottom:5px; transform: scale(0.9);}
+  .top:hover{transform: scale(0.9) translateY(-10px);}
   #banner{padding-bottom: 0;}
   header.effect .search-detailed .search-keyword-lgtm{flex-wrap: wrap;}
   #header-wrapper {height: max(90px, 10vh);}
